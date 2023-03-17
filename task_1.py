@@ -10,4 +10,4 @@
 name = input('ведите ваше имя :')
 password = input('ведите ваш пароль :')
 age = int(input('ведите ваш возраст :'))
-print('имя -', name, ',пароль -', password, ',возраст -', age)
+print(f'имя - {name}, пароль - {password}, возраст - {age}')

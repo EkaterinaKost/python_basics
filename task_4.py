@@ -25,5 +25,7 @@ if cash_proceeds > costs:
     staff = int(input('Введите численность сотрудников фирмы:'))
     print('Прибыль фирмы в расчете на одного сотрудника =',
           (cash_proceeds - costs) / staff)
+elif cash_proceeds == costs:
+    print('сработали в 0')
 else:
     print('Финансовый результат - убыток')

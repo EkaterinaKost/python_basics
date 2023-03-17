@@ -5,6 +5,6 @@
 # Введите число n: 3
 # n + nn + nnn = 369
 n = int(input('введите целое положительное число '))
-print(n, n + n, n + n + n)
+print(n, n + n, n + n + n, sep='')
 m = input('введите целое положительное число ')
-print(m, m + m, m + m + m)
+print(m + 2 * m + 3 * m)
