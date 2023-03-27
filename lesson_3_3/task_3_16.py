@@ -18,4 +18,3 @@ for el in range(n):
     if my_list[el] == x:
         count_x += 1
 print(f'число {x} встречается {count_x} раз')
-# 16

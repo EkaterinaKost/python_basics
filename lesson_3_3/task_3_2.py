@@ -15,7 +15,7 @@ division = lambda num_1, num_2: num_1 / num_2
 try:
     n_1 = int(input('Введите первое число: ', ))
     n_2 = int(input('Введите второе число: ', ))
-    n_1/n_2
+    n_1 / n_2
 except ValueError:
     print('! вы ввели не число')
 except ZeroDivisionError:

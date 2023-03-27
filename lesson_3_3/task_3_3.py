@@ -14,4 +14,3 @@ print(user_date(name=input('имя: '), surname=input('фамилия: '),
                 year_birth=input('год рождения: '),
                 city=input('город проживания: '),
                 email=input('электронный адрс: '), phone=input('телефон: ')))
-# 3

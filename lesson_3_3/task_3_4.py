@@ -9,7 +9,8 @@ def exe_3(a, b, c):
     # z.remove(min(a, b, c))
     z.sort()
     # return sum(z)
-    return z[1]+z[2]
+    return z[1] + z[2]
+
 
 def exe_3_use():
     print(exe_3(3, 6, 7))
