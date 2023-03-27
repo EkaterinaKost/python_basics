@@ -25,3 +25,4 @@ dictionary_year = {1: 'winter', 2: 'winter', 3: 'spring', 4: 'spring',
                    9: 'autumn', 10: 'autumn', 11: 'autumn', 12: 'winter'}
 month = int(input('введите число от 1 до 12 ', ))
 print(dictionary_year[month])
+# 1

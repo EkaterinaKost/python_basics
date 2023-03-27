@@ -22,4 +22,3 @@ except ZeroDivisionError:
     print('Вы что? Пытаетесь делить на 0!')
 else:
     print(division(n_1, n_2))
-
