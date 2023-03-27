@@ -10,12 +10,16 @@
 # Введите первое число: 10
 # Введите второе число: 10
 # 1.0
-def div(num_1, num_2):
-    if num_2 == 0:
-        print('Вы что? Пытаетесь делить на 0!')
-    return num_1 / num_2
+division = lambda num_1, num_2: num_1 / num_2
 
+try:
+    n_1 = int(input('Введите первое число: ', ))
+    n_2 = int(input('Введите второе число: ', ))
+    n_1/n_2
+except ValueError:
+    print('! вы ввели не число')
+except ZeroDivisionError:
+    print('Вы что? Пытаетесь делить на 0!')
+else:
+    print(division(n_1, n_2))
 
-print(div(int(input('Введите первое число: ', )),
-          int(input('Введите второе число: ', ))))
-# не поняла как работает try except
