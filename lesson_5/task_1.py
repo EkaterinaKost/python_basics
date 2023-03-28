@@ -21,8 +21,31 @@
 # Введите первое число: вп
 # Вы вместо трехзначного числа ввели строку (((. Исправьтесь
 # Введите операцию (+, -, *, / или 0 для выхода):
-try:
+def my_func(n_1, n_2):
     mark = input('Введите операцию (+, -, *, / или 0 для выхода): ')
+    if mark == 0:
+        return 0
+    elif mark == '+':
+        print(f'Ваш результат: {n_1 + n_2}')
+        return my_func(n_1, n_2)
+    elif mark == '-':
+        print(f'Ваш результат: {n_1 - n_2}')
+        return my_func(n_1, n_2)
+    elif mark == '/':
+        print(f'Ваш результат: {n_1 / n_2}')
+        return my_func(n_1, n_2)
+    elif mark == '*':
+        print(f'Ваш результат: {n_1 * n_2}')
+        return my_func(n_1, n_2)
+
+
+try:
     num_1 = int(input('Введите первое число: '))
     num_2 = int(input('Введите второе число: '))
+    num_1 / num_2
+except ValueError:
+    print('Вы вместо трехзначного числа ввели строку (((. Исправьтесь')
+except ZeroDivisionError:
+    print('Вы что? Пытаетесь делить на 0!')
 
+my_func(num_1, num_2)
